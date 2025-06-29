@@ -1,0 +1,32 @@
+main: ch.seenkid.dev.Main
+author: seenkid
+version: 1.0.0
+name: MineKahest
+commands:
+  meteo:
+    description: Change la météo ou l'heure
+    usage: /meteo jour|nuit|crepuscule|aube|rain|orage|sun
+  shop:
+    description: Ouvre le shop
+    usage: /shop
+  mkc:
+    description: Passe en mode créatif
+    usage: /mkc
+    permission: minekahest.creative
+    permission-message: §f[§cMineKahest§f]§a Vous n'avez pas la permission d'utiliser cette commande.
+  mks:
+    description: Passe en mode survie
+    usage: /mkc
+    permission: minekahest.survival
+    permission-message: §f[§cMineKahest§f]§a Vous n'avez pas la permission d'utiliser cette commande.
+  createworld:
+    description: Créé un monde MineKahest
+    usage: /createworld en regardant un pannal
+
+permissions:
+  minekahest.creative:
+    description: Permet d'utiliser la commande /mkc pour passer en créatif
+    default: op
+  minekahest.survival:
+    description: Permet d'utiliser la commande /mks pour passer en survie
+    default: op
